@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FemBingo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="formulas">
+            <h1>Քիմիայի հիմնական բանաձևերը</h1>
+            <ul>
+                <li>Mr = M</li>
+                <li>N<sub>Ա</sub> = 6.02 • 10<sup>23</sup></li>
+                <li>V<sub>m</sub> = 22.4լ/մոլ</li>
+                <li>M<sub>օդ</sub> = 29գ/մոլ</li>
+                <li>R = 8.314Ջ\(մոլԿ)</li>
+                <li>R = 0.082լ*մթն\(մոլ*Կ)</li>
+                <li>Mr = M</li>
+                <li>ω = (Ar / Mr) • 100%</li>
+                <li>n = V+Vm</li>
+                <li>ρ = m/V</li>
+                <li>D<sub>2</sub><sup>1</sup> = M<sub>1</sub>/M<sub>2</sub></li>
+                <li>ω = m<sub>լ․ն</sub>/m<sub>լ․թ</sub>•100%</li>
+                <li>n = m/M</li>
+                <li>n = N/NU</li>
+                <li>n = V/Vm</li>
+                <li>C<sub>m</sub> = m<sub>լ․ն</sub>/m<sub>լ․թ</sub>•100%</li>
+                <li>լ = m<sub>լ․ն</sub>/V<sub>լ․թ</sub></li>
+                <li>PV = nRT</li>
+                <li>η = m<sub>(գործ․)</sub>/m(տես․)</li>
+                <li>η = V<sub>(գործ․)</sub>/V(տես․)</li>
+                <li>v = k • C<sub>A</sub> • C<sub>B</sub></li>
+            </ul>
+        </div>
+        <div class="calculator">
+            <h2>Հաշվիչ</h2>
+            <form id="calc-form">
+                <label for="atomic-mass">Ատոմային զանգված(Ar):</label>
+                <input type="number" id="atomic-mass" step="any" required><br><br>
+                <label for="molar-mass">Մոլորակյին զանգված(Mr):</label>
+                <input type="number" id="molar-mass" step="any" required><br><br>
+                <button type="button" onclick="chemistry()">Պատասխան։</button>
+            </form>
+            <p id="patasxan"></p>
+
+
+            <script>
+                function chemistry(){
+    const Ar = parseFloat(document.getElementById('atomic-mass').value);
+    const Mr = parseFloat(document.getElementById('molar-mass').value);
+    const patasxan = (Ar / Mr) * 100;
+    document.getElementById('patasxan').textContent = `Պատասխան: ${patasxan}%`;
+}
+            </script>
+        </div>
+    </div>
+</body>
+</html>

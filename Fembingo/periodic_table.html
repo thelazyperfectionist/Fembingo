@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Պարբերական աղյուսակ</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Պարբերական աղյուսակ</h1>
+        <div id="periodic-table" class="periodic-table"></div>
+        <div id="element-popup" class="element-popup">
+        <div id="screen-overlay" class="overlay"></div>
+            <span id="close-popup" class="close-popup">&times;</span>
+            <h2 id="element-name"></h2>
+            <p><strong>Հայտնաբերվել է։</strong> <span id="discovered"></span></p>
+            <p><strong>Հալման ջերմաստիճան։</strong> <span id="melting-point"></span></p>
+            <p><strong>Եռման ջերմաստիճան։</strong> <span id="boiling-point"></span></p>
+            <p><strong>Էլեկտրոնները մեկ թաղանթի համար։</strong> <span id="electrons-per-shell"></span></p>
+            <p><strong>Էլեկտրոնային կոնֆիգուրացիա։</strong> <span id="electron-configuration"></span></p>
+        </div>
+        <div id="color-legend" class="color-legend">
+            <div class="legend-item" data-category="alkali-metal">
+                <span class="color-box alkali-metal"></span> Ալկալիական մետաղներ
+            </div>
+            <div class="legend-item" data-category="alkaline-earth">
+                <span class="color-box alkaline-earth"></span> Հողալկալիական մետաղներ
+            </div>
+            <div class="legend-item" data-category="transition-metal">
+                <span class="color-box transition-metal"></span> Անցումային մետաղներ
+            </div>
+            <div class="legend-item" data-category="post-transition-metal">
+                <span class="color-box post-transition-metal"></span> Այլ մետաղներ
+            </div>
+            <div class="legend-item" data-category="metalloid">
+                <span class="color-box metalloid"></span> Մետաղանմաններ
+            </div>
+            <div class="legend-item" data-category="nonmetal">
+                <span class="color-box nonmetal"></span> Այլ ոչ մետաղներներ
+            </div>
+            <div class="legend-item" data-category="halogen">
+                <span class="color-box halogen"></span> Հալոգեններ
+            </div>
+            <div class="legend-item" data-category="noble-gas">
+                <span class="color-box noble-gas"></span> Ազնիվ գազեր
+            </div>
+            <div class="legend-item" data-category="lanthanide">
+                <span class="color-box lanthanide"></span> Լանթանիդներ
+            </div>
+            <div class="legend-item" data-category="actinide">
+                <span class="color-box actinide"></span> Ակտինիդներ
+            </div>
+        </div>       
+</body>
+</html>
